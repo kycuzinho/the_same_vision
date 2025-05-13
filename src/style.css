@@ -8,7 +8,7 @@ body {
   }
 
   .navbar {
-    background-color: #333;
+    background-color: #5c5c5c;
   }
 
   .navbar .nav-link, .navbar-brand {
@@ -84,6 +84,11 @@ body {
   .card:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .person{
+    border-radius: 50%;
+    width: 100px;
   }
 
   footer {

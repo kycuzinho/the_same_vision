@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $mensagem = htmlspecialchars($_POST['mensagem']);
 
-    $para = "teu@email.com"; // <-- Altera aqui para o teu email real
+    $para = "email"; 
     $assunto = "Nova mensagem do site The Same Vision";
 
     $corpo = "Nome: $nome\nEmail: $email\nMensagem:\n$mensagem";
