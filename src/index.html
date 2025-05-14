@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Same Vision Agência Têxtil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
       <!-- <a class="navbar-brand" href="#"><i class="fas fa-tshirt me-2"></i>The Same Vision</a> -->
       <a class="navbar-brand" href="#">
@@ -33,14 +34,14 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero text-center p-5 mt-5">
+  <section class="hero text-center p-5 ">
     <div class="hero-img">
       <img src="img/showcase.png" alt="" class="img-fluid">
     </div>
     <div class="hero-overlay"></div>
     <div class="container position-relative text-white">
       <div>
-        <h1 class="display-4"><i ></i> Vestimos a sua visão</h1>
+        <h1 class="display-4 mt-3"><i ></i> Vestimos a sua visão</h1>
         <p class="lead">Mais de 20 anos de experiência no setor têxtil</p>
         <div>
           <img src="img/showcase.png" alt="" class="img-fluid" width="650px">
@@ -80,30 +81,34 @@
   <!-- SERVIÇOS -->
   <section id="servicos" class="py-5 bg-light" data-animate>
     <div class="container">
-      <h2 class="mb-4">Os Nossos Serviços</h2>
+      <h2 class="mb-4 text-center">Os Nossos Serviços</h2>
+      <hr>
       <div class="row text-center">
         <div class="col-md-3 mb-3">
           <div class="card p-3">
             <i class="fas fa-shirt fa-2x mb-2"></i>
-            <img  class="card-img" src="img/asked_questions.png" alt="">
+            <img  class="card-img rounded mb-4" src="img/exterior.jpg" alt="">
             <h5>Vestuário Exterior</h5>
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="card p-3">
             <i class="fas fa-user-tie fa-2x mb-2"></i>
+            <img class="img-fluid rounded mb-4" src="img/personalizada.jpg" alt="">
             <h5>Moda Personalizada</h5>
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="card p-3">
             <i class="fas fa-box-open fa-2x mb-2"></i>
+            <img class="img-fluid rounded mb-4" src="img/encomenda.png" alt="">
             <h5>Produção sob Encomenda</h5>
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="card p-3">
             <i class="fas fa-plane fa-2x mb-2"></i>
+            <img class="img-fluid rounded mb-4" src="img/exportações.jpg" alt="">
             <h5>Exportação Global</h5>
           </div>
         </div>
@@ -115,6 +120,7 @@
   <section id="galeria" class="py-5" data-animate>
     <div class="container">
       <h2 class="mb-4 text-center">Galeria de Produtos</h2>
+      <hr>
       <div class="row gallery">
         <div class="col-md-4 mb-3">
           <img src="img/showcase.png" alt="Produto 1" class="img-fluid">
@@ -151,9 +157,10 @@
   <section id="depoimentos" class="py-5 bg-light" data-animate>
     <div class="container">
       <h2 class="mb-4 text-center">O que dizem os nossos clientes</h2>
+      <hr>
       <div class="row text-center">
-        <div class="col-md-4 mb-3">
-          <div class="card p-3">
+        <div class="col-md-4 mb-3 ">
+          <div class="card p-3 d-flex flex-column align-items-center">
             <img class="card-img mb-2 img-fluid person" src="img/person1.png" alt="">
             <div class="card-body">
               <p>"Excelente qualidade e profissionalismo. Recomendo totalmente!"</p>
@@ -162,13 +169,15 @@
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card p-3">
+          <div class="card p-3 d-flex flex-column align-items-center">
+            <img class="card-img mb-2 img-fluid person" src="img/person1.png" alt="">
             <p>"A melhor parceria que já tivemos no setor têxtil."</p>
             <small><i class="fas fa-user"></i> João Oliveira</small>
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card p-3">
+          <div class="card p-3 d-flex flex-column align-items-center">
+            <img class="card-img mb-2 img-fluid person" src="img/person1.png" alt="">
             <p>"A melhor parceria que já tivemos no setor têxtil."</p>
             <small><i class="fas fa-user"></i> João Oliveira</small>
           </div>
@@ -183,22 +192,24 @@
       <h2 class="mb-4">Contactos</h2>
       <p><i class="fas fa-map-marker-alt me-2"></i><strong>Morada:</strong> Rua Senhora da Conceição, Nº 203, 4795-090 Aves, Santo Tirso</p>
       <p><i class="fas fa-map-marker-alt me-2"></i><strong>Telefone:</strong> 252 161 909</p>
-      <form>
+      <form action="enviar.php" method="POST" class="needs-validation">
         <div class="row">
           <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Nome">
+            <input type="text" class="form-control" name="nome" placeholder="Nome" required>
           </div>
           <div class="col-md-6 mb-3">
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
           </div>
           <div class="col-12 mb-3">
-            <textarea class="form-control" rows="4" placeholder="Mensagem"></textarea>
+            <textarea class="form-control" name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
           </div>
           <div class="col-12">
-            <button class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>Enviar</button>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane me-2"></i>Enviar
+            </button>
           </div>
         </div>
-      </form>
+      </form>      
     </div>
   </section>
 

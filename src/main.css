@@ -1,13 +1,18 @@
 @charset "UTF-8";
-/* $primary: rgb(0, 89, 255);
-$secondary: rgb(228, 228, 228);
- */
+/* $primary: rgb(0, 89, 255); */
+/* $secondary: rgb(228, 228, 228); */
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+.btn-primary {
+  color: #a7d3ff;
+  background-color: #7cc;
+  border-color: #5bc2c2;
+}
+
 /*!
  * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;

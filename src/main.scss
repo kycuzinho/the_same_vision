@@ -1,5 +1,11 @@
-/* $primary: rgb(0, 89, 255);
-$secondary: rgb(228, 228, 228);
- */
+/* $primary: rgb(0, 89, 255); */
+/* $secondary: rgb(228, 228, 228); */
+
+.btn-primary {
+    color: #a7d3ff;
+    background-color: #7cc;
+    border-color: #5bc2c2
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"

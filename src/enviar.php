@@ -4,11 +4,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $mensagem = htmlspecialchars($_POST['mensagem']);
 
-    $para = "email"; 
+    $para = "teu@email.com"; // <-- substitui pelo teu e-mail verdadeiro
     $assunto = "Nova mensagem do site The Same Vision";
 
     $corpo = "Nome: $nome\nEmail: $email\nMensagem:\n$mensagem";
-
     $headers = "From: $nome <$email>";
 
     if (mail($para, $assunto, $corpo, $headers)) {
