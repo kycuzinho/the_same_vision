@@ -75,6 +75,18 @@ body {
     transform: scale(1.05);
   }
 
+  .work{
+    border: none;
+    /* background-color: #eee; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in;
+  }
+
+  .work:hover{
+    transform: scale(1.03);
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
+  }
+
   .card {
     border: none;
     background-color: #eee;
